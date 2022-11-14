@@ -1,0 +1,15 @@
+{
+  "name": "@vue3/shared",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "module": "dist/shared.es.js",
+  "buildOptions": {
+    "name": "VueNextShared",
+    "formats": [
+      "cjs",
+      "es",
+      "iife"
+    ]
+  }
+}
