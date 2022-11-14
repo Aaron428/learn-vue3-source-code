@@ -7,13 +7,9 @@ const targets = readdirSync('packages').filter((file) =>
 
 async function build(target) {
   try {
-    await execa(
-      'rollup',
-      ['-c', '--environment', `TARGET:${target}`, '--bundleConfigAsCjs'],
-      {
-        stdio: 'inherit',
-      }
-    )
+    await execa('rollup', ['-c', '--environment', `TARGET:${target}`], {
+      stdio: 'inherit',
+    })
   } catch (e) {
     console.error('build error: try again')
   }

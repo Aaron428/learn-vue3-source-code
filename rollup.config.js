@@ -1,7 +1,7 @@
-import { resolve } from 'path'
-import JsonPlugin from '@rollup/plugin-json'
-import NodeResolve from '@rollup/plugin-node-resolve'
-import TsPlugin from 'rollup-plugin-typescript2'
+const { resolve } = require('path')
+const JsonPlugin = require('@rollup/plugin-json')
+const NodeResolve = require('@rollup/plugin-node-resolve')
+const TsPlugin = require('rollup-plugin-typescript2')
 
 const packagesDir = resolve(__dirname, 'packages')
 
@@ -30,4 +30,4 @@ function createConfig(format) {
   }
 }
 
-export default buildOptions.formats.map((item) => createConfig(item))
+module.exports = buildOptions.formats.map((item) => createConfig(item))
