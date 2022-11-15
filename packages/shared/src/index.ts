@@ -1,5 +1,4 @@
-const shared= {}
+export const isObject = (value: unknown) =>
+  typeof value === 'object' && value !== null
 
-export {
-	shared
-}
+export const extend = Object.assign

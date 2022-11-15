@@ -5,7 +5,7 @@
   "license": "MIT",
   "module": "dist/reactivity.es.js",
   "buildOptions": {
-    "name": "VueNextShared",
+    "name": "VueNextReactivity",
     "formats": [
       "cjs",
       "es",

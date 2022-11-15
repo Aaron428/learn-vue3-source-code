@@ -1,3 +1,2 @@
-const reactivity = {}
-
-export {reactivity}
+export * from './reactivity'
+export { effect } from './effect'
